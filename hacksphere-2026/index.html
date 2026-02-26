@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackSphere 2026 - مدرسة ICB x DFTeam-EG</title>
+    <meta name="description" content="مسابقة الهاكاثون السنوية بالتعاون بين مدرسة ICB وفريق Digital Fingers - حلول مبتكرة للمشكلات الحديثة باستخدام التكنولوجيا">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button id="themeToggle" class="theme-toggle-btn">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+        <button id="langToggle" class="lang-toggle-btn">
+            <span>EN</span>
+            <span>عربي</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <img src="assets/logos/icb-logo.png" alt="ICB School" class="nav-logo">
+                <span class="logo-separator">×</span>
+                <img src="assets/logos/dfteam-logo.png" alt="DFTeam-EG" class="nav-logo">
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="#about" class="nav-link">عن المسابقة</a>
+                <a href="structure.html" class="nav-link">المراحل</a>
+                <a href="#judges" class="nav-link">الحكام</a>
+                <a href="leaderboard.html" class="nav-link">المتقدمون</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="register.html" class="btn-primary">
+                    <i class="fas fa-user-plus"></i>
+                    <span>تسجيل الفريق</span>
+                </a>
+                <a href="dashboard.html" class="btn-secondary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>دخول</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb"></div>
+            <div class="gradient-orb-2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>مسابقة الهاكاثون السنوية 2026</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">HackSphere</span>
+                    <span class="year">2026</span>
+                </h1>
+                <p class="hero-tagline">حلول مبتكرة للمشكلات الحديثة باستخدام التكنولوجيا</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">يوم</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">ساعة</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">دقيقة</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">ثانية</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="register.html" class="btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        <span>سجل فريقك الآن</span>
+                    </a>
+                    <a href="#about" class="btn-outline btn-large">
+                        <i class="fas fa-play"></i>
+                        <span>تعرف على المسابقة</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">100+</span>
+                        <span class="stat-label">فريق مشارك</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">50+</span>
+                        <span class="stat-label">خبير ومحكم</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">15K</span>
+                        <span class="stat-label">جائزة مالية</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-card-2">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="floating-card-3">
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title">شركاء النجاح</h2>
+            <div class="partners-grid">
+                <div class="partner-card glass-card">
+                    <img src="assets/logos/icb-logo-large.png" alt="ICB School">
+                    <h3>مدرسة ICB</h3>
+                    <p>الراعي الرسمي والمضيف</p>
+                </div>
+                <div class="partner-card glass-card">
+                    <img src="assets/logos/dfteam-logo-large.png" alt="DFTeam-EG">
+                    <h3>Digital Fingers Team</h3>
+                    <p>المنظم والمحتضن للفرق الفائزة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">عن HackSphere 2026</h2>
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <p>HackSphere 2026 هي مسابقة هاكاثون تقام لأول مرة بالتعاون بين <strong>مدرسة ICB</strong> و <strong>فريق Digital Fingers</strong> في بنها، مصر. تهدف المسابقة إلى جمع المبدعين والمطورين والمصممين لحل المشكلات الحديثة باستخدام أحدث التقنيات.</p>
+                    <p>سيتمكن المشاركون من تطوير حلول تقنية مبتكرة لمدة 48 ساعة متواصلة، مع فرصة للفوز بجوائز قيمة واحتضان مشاريعهم من قبل فريق Digital Fingers.</p>
+                    
+                    <div class="theme-box">
+                        <h3>محور المسابقة:</h3>
+                        <p class="theme-highlight">"حلول مبتكرة للمشكلات الحديثة باستخدام التكنولوجيا"</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-grid">
+                        <div class="stat-box glass-card">
+                            <i class="fas fa-users"></i>
+                            <span class="stat-number">48</span>
+                            <span class="stat-desc">ساعة متواصلة</span>
+                        </div>
+                        <div class="stat-box glass-card">
+                            <i class="fas fa-trophy"></i>
+                            <span class="stat-number">3</span>
+                            <span class="stat-desc">فرق فائزة</span>
+                        </div>
+                        <div class="stat-box glass-card">
+                            <i class="fas fa-globe"></i>
+                            <span class="stat-number">5+</span>
+                            <span class="stat-desc">مجالات تقنية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logos">
+                        <img src="assets/logos/icb-logo.png" alt="ICB School">
+                        <img src="assets/logos/dfteam-logo.png" alt="DFTeam-EG">
+                    </div>
+                    <p>مسابقة HackSphere 2026 - بالتعاون بين مدرسة ICB وفريق Digital Fingers</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#about">عن المسابقة</a></li>
+                        <li><a href="register.html">تسجيل الفريق</a></li>
+                        <li><a href="structure.html">مراحل المسابقة</a></li>
+                        <li><a href="leaderboard.html">المتقدمون</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 0123456789</li>
+                        <li><i class="fas fa-envelope"></i> info@hacksphere2026.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> بنها، مصر</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2026 HackSphere - مدرسة ICB و DFTeam-EG</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>
